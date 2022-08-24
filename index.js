@@ -84,7 +84,11 @@ inquirer
   .then((response) => {
    let html = generateHTML(response);
 
-   fs.writeFile('index.html', html, (error) =>
+  fs.writeFile('index.html', html, (error) =>
+  error ? console.error(error) : console.log(html)
+  );
+
+  fs.writeFile('readmes.md', html, (error) =>
   error ? console.error(error) : console.log(html)
   );
   });
