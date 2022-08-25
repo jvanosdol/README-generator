@@ -16,7 +16,7 @@ function generateMarkdown(data) {
   
   ## Project Title:
 
-  #${data.title}
+  ${data.title}
 
   
   ## Author:
@@ -61,9 +61,9 @@ function generateMarkdown(data) {
 
   ## Contact
 
-  GitHub username: ${data.username}
-  GitHub URL: ${data.githubURL}
-  Email: ${data.email}
+  GitHub username: ${data.username}\n
+  GitHub URL: ${data.githubURL}\n
+  Email: ${data.email}\n
 
 `;
 }
