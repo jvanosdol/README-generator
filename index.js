@@ -1,5 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const util = require('util');
 
 // TODO: Include packages needed for this application
 
@@ -79,6 +80,12 @@ inquirer
       type: 'input',
       message: 'What is your GitHub URL?',
       name: 'github',
+    },
+    {
+      type: 'list',
+      message: 'What kind of license did you use?',
+      name: 'license',
+      choices: ['a', 'b', 'c', 'd']
     },
   ])
   .then((response) => {

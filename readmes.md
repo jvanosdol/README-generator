@@ -11,11 +11,11 @@
 <body>
     
 
-    <p>Your name is james</p>
-    <p>Your location is asdf</p>
-    <p>Bio: qwer</p>
-    <p>LinkedIn URL: zxcv</p>
-    <p>GitHub URL: zxcv</p>
+    <p>Your name is asdf</p>
+    <p>Your location is adsf</p>
+    <p>Bio: adsf</p>
+    <p>LinkedIn URL: adsf</p>
+    <p>GitHub URL: adsf</p>
 
 
 </body>
