@@ -2,10 +2,45 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const util = require('util');
 
+const generateMarkdown = require('./utils/generateMarkdown.js')
+
 // TODO: Include packages needed for this application
 
 // TODO: Create an array of questions for user input
-const questions = [];
+const questions = [
+  
+{
+  type: 'input',
+  message: 'What is your name?',
+  name: 'name',
+},
+{
+  type: 'input',
+  message: 'What is your location?',
+  name: 'location',
+},
+{
+  type: 'input',
+  message: 'Write a short profile bio',
+  name: 'bio',
+},
+{
+  type: 'input',
+  message: 'What is your LinkedIn URL?',
+  name: 'linkedin',
+},
+{
+  type: 'input',
+  message: 'What is your GitHub URL?',
+  name: 'github',
+},
+{
+  type: 'list',
+  message: 'What kind of license did you use?',
+  name: 'license',
+  choices: ['a', 'b', 'c', 'd']
+}
+];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
@@ -46,56 +81,31 @@ const generateHTML = (response) =>  `
     <p>Bio: ${response.bio}</p>
     <p>LinkedIn URL: ${response.linkedin}</p>
     <p>GitHub URL: ${response.github}</p>
+    <p>License: ${response.license}</p>
+
+    <p>##License: ${response.license}</p>
 
 
 </body>
 </html>
 `
 
+
+
 // name, location, bio, LinkedIn URL, and GitHub URL.
 
 inquirer
-  .prompt([
-    {
-      type: 'input',
-      message: 'What is your name?',
-      name: 'name',
-    },
-    {
-      type: 'input',
-      message: 'What is your location?',
-      name: 'location',
-    },
-    {
-      type: 'input',
-      message: 'Write a short profile bio',
-      name: 'bio',
-    },
-    {
-      type: 'input',
-      message: 'What is your LinkedIn URL?',
-      name: 'linkedin',
-    },
-    {
-      type: 'input',
-      message: 'What is your GitHub URL?',
-      name: 'github',
-    },
-    {
-      type: 'list',
-      message: 'What kind of license did you use?',
-      name: 'license',
-      choices: ['a', 'b', 'c', 'd']
-    },
-  ])
-  .then((response) => {
-   let html = generateHTML(response);
+  .prompt(questions)
 
-  fs.writeFile('index.html', html, (error) =>
-  error ? console.error(error) : console.log(html)
-  );
+  
+  .then((data) => {
+   //let html = generateHTML(response);
+   const response = generateMarkdown(data);
+   
 
-  fs.writeFile('readmes.md', html, (error) =>
-  error ? console.error(error) : console.log(html)
-  );
-  });
+
+    fs.writeFile('./output/readmes.md', response, (error) =>
+    error ? console.error(error) : console.log(response)
+    );
+  }
+);
