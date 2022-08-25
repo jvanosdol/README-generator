@@ -8,7 +8,13 @@ const generateMarkdown = require('./utils/generateMarkdown.js')
 
 // TODO: Create an array of questions for user input
 const questions = [
-  
+
+
+{
+  type: 'input',
+  message: 'What is the project title?',
+  name: 'title',
+},
 {
   type: 'input',
   message: 'What is your name?',
@@ -16,23 +22,43 @@ const questions = [
 },
 {
   type: 'input',
-  message: 'What is your location?',
-  name: 'location',
+  message: 'Enter a description of the project.',
+  name: 'description',
 },
 {
   type: 'input',
-  message: 'Write a short profile bio',
-  name: 'bio',
+  message: 'What did you use in order to build this app?',
+  name: 'builtWith',
 },
 {
   type: 'input',
-  message: 'What is your LinkedIn URL?',
-  name: 'linkedin',
+  message: 'What do you need to install in order to run this app?',
+  name: 'installation',
+},
+{
+  type: 'input',
+  message: 'What resources did you find useful in building this app?',
+  name: 'credits',
+},
+{
+  type: 'input',
+  message: 'If someone is interested in contributing to this project, how can they do so?',
+  name: 'contribute',
+},
+{
+  type: 'input',
+  message: 'What is your GitHub username??',
+  name: 'username',
 },
 {
   type: 'input',
   message: 'What is your GitHub URL?',
-  name: 'github',
+  name: 'githubURL',
+},
+{
+  type: 'input',
+  message: 'What is your email?',
+  name: 'email',
 },
 {
   type: 'list',
@@ -104,7 +130,7 @@ inquirer
    
 
 
-    fs.writeFile('./output/readmes.md', response, (error) =>
+    fs.writeFile('./output/README.md', response, (error) =>
     error ? console.error(error) : console.log(response)
     );
   }
