@@ -2,7 +2,7 @@
   
   ## Project Title:
 
-  Test Title
+  README.md generator
 
   
   ## Author:
@@ -22,40 +22,40 @@
 
   ## Description:
 
-  This is a project description.
+  
 
 
   ## Built With
 
-  Javascript, NodeJs, Inquirer Package
+  
 
   ## License 
 
- License: MIT License
+ License: Mozilla Public License
 
 
   ## Installation
 
-  NodeJs and Inquirer
+  
 
 
   ## Credits
 
-  Stackoverflow, youtube, W3 Schools
+  
 
 
   ## How to Contribute
 
-  contact me to add onto the project
+  
 
 
   ## Contact
 
-  GitHub username: jvanosdol
+  GitHub username: 
 
-  GitHub URL: jvanosdol
+  GitHub URL: 
 
-  Email: jvanosdol
+  Email: 
 
 
 

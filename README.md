@@ -34,20 +34,10 @@ Make sure Node.js and Inquirer.js are installed. Once they are installed, run th
 - Node.js
 
 
-
 ## Installation
 
 Clone the repo
 git clone https://github.com/jvanosdol/README-generator
-
-
-## Screenshots
-
-
-- Planner Screenshot
-
-
-  ![screenshot](/assets/planner-screenshot.png)
 
 
 ## Credits
