@@ -64,57 +64,9 @@ const questions = [
   type: 'list',
   message: 'What kind of license did you use?',
   name: 'license',
-  choices: ['a', 'b', 'c', 'd']
+  choices: ['Mozilla Public License', 'APACHE License', 'MIT License', 'None']
 }
 ];
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
-
-
-
-
-
-// fs.readFile('data.csv', 'utf8', (error, data) =>
-//   error ? console.error(error) : console.log(data)
-// );
-
-// fs.writeFile('index.html', 'utf8', (error, data) =>
-//   error ? console.error(error) : console.log(data)
-// );
-
-const generateHTML = (response) =>  `
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-</head>
-<body>
-    
-
-    <p>Your name is ${response.name}</p>
-    <p>Your location is ${response.location}</p>
-    <p>Bio: ${response.bio}</p>
-    <p>LinkedIn URL: ${response.linkedin}</p>
-    <p>GitHub URL: ${response.github}</p>
-    <p>License: ${response.license}</p>
-
-    <p>##License: ${response.license}</p>
-
-
-</body>
-</html>
-`
 
 
 

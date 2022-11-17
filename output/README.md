@@ -2,12 +2,12 @@
   
   ## Project Title:
 
-  akjsdnfajsdf\
+  Test Title
 
   
   ## Author:
   
-  asdfadsfads
+  James
 
 
   ## Table of Contents
@@ -22,35 +22,40 @@
 
   ## Description:
 
-  fasdf
+  This is a project description.
 
 
   ## Built With
 
-  zcvz
+  Javascript, NodeJs, Inquirer Package
+
+  ## License 
+
+ License: MIT License
 
 
   ## Installation
 
-  xcvz
+  NodeJs and Inquirer
 
 
   ## Credits
 
-  xcvzxcvzxcvzxcv
+  Stackoverflow, youtube, W3 Schools
 
 
   ## How to Contribute
 
-  afdsgadsgfadsf
+  contact me to add onto the project
 
 
   ## Contact
 
-  GitHub username: sadfasdf
+  GitHub username: jvanosdol
 
-  GitHub URL: asdfasdf
+  GitHub URL: jvanosdol
 
-  Email: poiupoiu
+  Email: jvanosdol
+
 
 
